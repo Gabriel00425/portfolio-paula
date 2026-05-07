@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Paula Nicole <span>Dimalanta</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="workexperiences.html" class="active">Work Experience</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="volunteer.html">Volunteer Work</a>
+            <a href="mentors.html">Mentors</a>
+            <a href="networking.html">Networking</a>
+            <a href="achievements.html">Achievements</a>
+        </nav>
+    </header>
+
+    <header class="page-header">
+        <h1>Work Experience</h1>
+        <p>My professional journey</p>
+    </header>
+
+    <main class="main-content">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <div class="faqs-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i class='bx bxs-briefcase'></i>
+                    <span>Call Center Representative</span>
+                    <i class='bx bx-chevron-down faq-toggle'></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="content-split">
+                        <div class="text-block">
+                            <div class="company">Call Center Company</div>
+                            <div class="date">2025 - Present</div>
+                            <ul style="list-style: disc; padding-left: 20px; margin-top: 15px;">
+                                <li>Handled high-volume customer inquiries with professionalism and efficiency</li>
+                                <li>Developed exceptional communication and active listening skills</li>
+                                <li>Mastered problem-solving techniques for complex customer issues</li>
+                                <li>Demonstrated strong multitasking abilities in a fast-paced environment</li>
+                                <li>Balanced work responsibilities with academic commitments as a working student</li>
+                                <li>Gained experience in customer relationship management and service excellence</li>
+                            </ul>
+                        </div>
+                        <div class="image-group">
+                            <img src="images/workexperience.jfif" alt="Call Center Work Environment" style="border-radius: 8px;"/>
+                            <img src="images/workexperience1.jfif" alt="Call Center Operations" style="border-radius: 8px;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i class='bx bxs-briefcase'></i>
+                    <span>Business Simulation Project</span>
+                    <i class='bx bx-chevron-down faq-toggle'></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="content-split">
+                        <div class="text-block">
+                            <div class="company">Business Simulation Project</div>
+                            <div class="date">2024 - 2025</div>
+                            <ul style="list-style: disc; padding-left: 20px; margin-top: 15px;">
+                                <li>Participated in a strategic business simulation to practice decision-making and financial planning</li>
+                                <li>Analyzed market trends, managed budgets, and adjusted pricing strategies for growth</li>
+                                <li>Collaborated with a team to develop marketing plans and operational improvements</li>
+                                <li>Presented business results and insights to stakeholders with clear data-driven recommendations</li>
+                                <li>Strengthened leadership, problem-solving, and business acumen through realistic scenarios</li>
+                            </ul>
+                        </div>
+                        <div class="image-group">
+                            <img src="images/business.jfif" alt="Business Simulation" style="border-radius: 8px;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Paula Nicole Dimalanta – BSOA Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function() {
+                const faqItem = this.closest('.faq-item');
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

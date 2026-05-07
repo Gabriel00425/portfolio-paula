@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Paula Nicole Dimalanta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .milestone-path {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+
+        .path-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .milestone-item {
+            position: relative;
+            display: flex;
+            width: 100%;
+            margin-bottom: 80px;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .milestone-card {
+            width: 100%;
+            max-width: 520px;
+            background: #fff;
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .milestone-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+            margin-bottom: 20px;
+        }
+
+        .milestone-content h3 {
+            font-size: 1.9rem;
+            margin-bottom: 12px;
+            color: #2d3436;
+        }
+
+        .milestone-content .date {
+            display: inline-block;
+            font-size: 0.95rem;
+            color: #6c5ce7;
+            background: rgba(108, 92, 231, 0.12);
+            padding: 8px 16px;
+            border-radius: 999px;
+            margin: 0 auto 18px;
+        }
+
+        .milestone-content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #555;
+            margin: 0;
+        }
+
+        .path-dot {
+            position: absolute;
+            left: 50%;
+            top: 40px;
+            width: 18px;
+            height: 18px;
+            background: #667eea;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 12px rgba(102, 126, 234, 0.4);
+            z-index: 3;
+        }
+
+        @media (max-width: 1024px) {
+            .milestone-item {
+                justify-content: center;
+            }
+
+            .milestone-card {
+                max-width: 90%;
+                text-align: center;
+                margin: 0;
+                padding: 20px;
+            }
+
+            .milestone-content .date {
+                margin: 0 auto 18px;
+            }
+
+            .path-line {
+                left: 20px;
+            }
+
+            .path-dot {
+                left: 20px;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .milestone-path {
+                padding: 50px 10px;
+            }
+
+            .milestone-item {
+                margin-bottom: 40px;
+            }
+
+            .milestone-card {
+                max-width: 95%;
+                padding: 16px;
+            }
+
+            .milestone-image {
+                height: 200px;
+                margin-bottom: 16px;
+            }
+
+            .milestone-content h3 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .milestone-content .date {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+                margin-bottom: 14px;
+            }
+
+            .milestone-content p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .path-line {
+                display: none;
+            }
+
+            .path-dot {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .milestone-path {
+                padding: 30px 5px;
+            }
+
+            .milestone-card {
+                padding: 12px;
+            }
+
+            .milestone-image {
+                height: 150px;
+                margin-bottom: 12px;
+            }
+
+            .milestone-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .milestone-content p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Paula Nicole <span>Dimalanta</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="workexperiences.html">Work Experience</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="volunteer.html">Volunteer Work</a>
+            <a href="mentors.html">Mentors</a>
+            <a href="networking.html">Networking</a>
+            <a href="achievements.html">Achievements</a>
+        </nav>
+    </header>
+
+    <header class="page-header">
+        <h1>Education</h1>
+        <p>My ABM academic journey and graduation highlights</p>
+    </header>
+
+    <main class="main-content">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <section class="milestone-path">
+            <div class="path-line"></div>
+
+            <div class="milestone-item">
+                <div class="path-dot"></div>
+                <div class="milestone-card">
+                    <img src="images/educational1.jfif" alt="BSOA Graduation" class="milestone-image">
+                    <div class="milestone-content">
+                        <h3>Graduation</h3>
+                        <span class="date">2020 -2024</span>
+                        <p>Successfully completed my Accountancy, Business and Management at Clark College of Science and Technology, marking a significant milestone in my academic and professional journey.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone-item">
+                <div class="path-dot"></div>
+                <div class="milestone-card">
+                    <img src="images/educational.jfif" alt="Academic Excellence" class="milestone-image">
+                    <div class="milestone-content">
+                        <h3>Academic Excellence</h3>
+                        <span class="date">2020 - 2024</span>
+                        <p>Maintained strong academic performance throughout my ABM program, developing foundational skills in business management, business communication, and organizational management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Paula Nicole Dimalanta – BSOA Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

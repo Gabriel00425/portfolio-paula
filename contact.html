@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">My <span>Portfolio</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+       <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="milestone.html">Milestones</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="skills.html">Skills</a>
+            <a href="workexperiences.html">Experience</a>
+            <a href="mission.html">Mission</a>
+            <a href="networking.html">Networking</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html"class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact-section" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <p>If you'd like to get in touch, please use the form below:</p>
+        
+        <form class="contact-form" id="contactForm">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn" id="sendBtn" onclick="showPopup(event)">Send Message</button>
+        </form>
+
+        <div class="contact-details">
+            <h3>Other Ways to Reach Me</h3>
+            <ul>
+                <li><i class='bx bx-envelope'></i>itsmepauladimalanta@gmail.com</li>
+                <li><i class='bx bx-phone'></i> +63 999-999-9999</li>
+                <li><i class='bx bx-map'></i>Mabalacat City Pampanga</li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="popupModal" class="popup-modal">
+        <div class="popup-modal-content">
+            <h2>Message Sent</h2>
+            <p>Message sent to Paula!</p>
+            <button class="btn" id="popupOkBtn">Okay</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function showPopup(event) {
+            event.preventDefault();
+            document.getElementById('popupModal').classList.add('active');
+            document.getElementById('contactForm').reset();
+        }
+        document.getElementById('popupOkBtn').addEventListener('click', function() {
+            document.getElementById('popupModal').classList.remove('active');
+        });
+        document.getElementById('popupClose').addEventListener('click', function() {
+            document.getElementById('popupModal').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

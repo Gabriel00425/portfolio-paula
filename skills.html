@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Paula Nicole <span>Dimalanta</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="workexperiences.html">Work Experience</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="volunteer.html">Volunteer Work</a>
+            <a href="mentors.html">Mentors</a>
+            <a href="networking.html">Networking</a>
+            <a href="achievements.html">Achievements</a>
+        </nav>
+    </header>
+
+    <header class="page-header">
+        <h1>My Skills</h1>
+        <p>Abilities and competencies I've developed</p>
+    </header>
+
+    <main class="main-content">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="skills-category">
+            <h2>Creative & Personal Skills</h2>
+            <p class="hint-text">Click on a skill to learn more</p>
+            <div class="skills-grid">
+                <span class="skill-tag" onclick="toggleSkill(this, 'dancing')">Dancing</span>
+                <span class="skill-tag" onclick="toggleSkill(this, 'sports')">Sports</span>
+                <span class="skill-tag" onclick="toggleSkill(this, 'drawing')">Drawing/Painting</span>
+            </div>
+
+
+            <div id="dancing" class="skill-content">
+                <h3>Dancing</h3>
+                <p>Dancing is one of my passions, allowing me to express creativity through movement. It helps me stay active and brings joy to both myself and others.</p>
+                <img src="images/skill2.jfif" alt="" style="width: 400px; height: auto; max-width: 100%; border-radius: 8px; display: block; margin: 0 auto;">
+            </div>
+
+            <div id="sports" class="skill-content">
+                <h3>Sports</h3>
+                <p>I'm enthusiastic about sports, participating in various activities that promote physical fitness, teamwork, and healthy competition.</p>
+                <img src="images/skill4.jfif" alt="" style="width: 400px; height: auto; max-width: 100%; border-radius: 8px; display: block; margin: 0 auto;">
+            </div>
+
+            <div id="drawing" class="skill-content">
+                <h3>Drawing/Painting</h3>
+                <p>I enjoy drawing and painting as creative outlets, using art to visualize ideas and express emotions through visual mediums.</p>
+                <img src="images/skill3.jfif" alt="" style="width: 400px; height: auto; max-width: 100%; border-radius: 8px; display: block; margin: 0 auto;">
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h2>Professional Skills</h2>
+            <p class="hint-text">Click on a skill to learn more</p>
+            <div class="skills-grid">
+                <span class="skill-tag" onclick="toggleSkill(this, 'communication')">Communication</span>
+                <span class="skill-tag" onclick="toggleSkill(this, 'teamwork')">Teamwork</span>
+                <span class="skill-tag" onclick="toggleSkill(this, 'organization')">Organization</span>
+                <span class="skill-tag" onclick="toggleSkill(this, 'adaptability')">Adaptability</span>
+            </div>
+
+            <div id="communication" class="skill-content">
+                <h3>Communication</h3>
+                <p>Effective communication is at the core of everything I do. I excel at conveying ideas clearly through written and verbal channels, actively listening to understand others' perspectives, and adapting my communication style to suit different audiences.</p>
+            </div>
+
+            <div id="teamwork" class="skill-content">
+                <h3>Teamwork</h3>
+                <p>I thrive in collaborative environments and believe that the best results come from diverse teams working together. I'm skilled at contributing my strengths while supporting others to achieve common goals.</p>
+            </div>
+
+            <div id="organization" class="skill-content">
+                <h3>Organization & Filing</h3>
+                <p>I'm proficient in organizing documents, maintaining records, and managing filing systems both physically and digitally. I understand the importance of efficient document management in any office setting.</p>
+            </div>
+
+            <div id="adaptability" class="skill-content">
+                <h3>Adaptability</h3>
+                <p>In a rapidly changing world, I embrace flexibility and remain open to new ideas and approaches. I quickly adjust to changing circumstances and view every change as an opportunity to grow.</p>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleSkill(element, skillId) {
+            const allContents = document.querySelectorAll('.skill-content');
+            const allTags = document.querySelectorAll('.skill-tag');
+            
+            allContents.forEach(content => content.classList.remove('active'));
+            allTags.forEach(tag => tag.style.background = '');
+            allTags.forEach(tag => tag.style.color = '');
+            
+            const targetContent = document.getElementById(skillId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+                element.style.background = '#6c5ce7';
+                element.style.color = 'white';
+            }
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Paula Nicole Dimalanta – BSOA Portfolio</p>
+    </footer>
+</body>
+</html>

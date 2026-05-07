@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Work - Paula Nicole Dimalanta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Paula Nicole <span>Dimalanta</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="workexperiences.html">Work Experience</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="volunteer.html" class="active">Volunteer Work</a>
+            <a href="mentors.html">Mentors</a>
+            <a href="networking.html">Networking</a>
+            <a href="achievements.html">Achievements</a>
+        </nav>
+    </header>
+
+    <header class="page-header">
+        <h1>Volunteer Work</h1>
+        <p>CWTS community service in Dau community</p>
+    </header>
+
+    <main class="main-content">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <div class="faqs-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i class='bx bxs-badge-check'></i>
+                    <span>Community Service Through CWTS</span>
+                    <i class='bx bx-chevron-down faq-toggle'></i>
+                </button>
+                <div class="faq-answer">
+                    <p>As part of my Civic Welfare Training Service (CWTS), I actively participated in community service initiatives in the Dau community. This experience allowed me to contribute to local welfare efforts and develop a deeper understanding of community needs and social responsibility.</p>
+                    <div class="center-image" style="margin-top: 15px;">
+                        <img src="images/volunteering.jpg" alt="CWTS Community Service in Dau" style="max-width: 100%; border-radius: 8px;"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i class='bx bxs-star'></i>
+                    <span>My Contributions</span>
+                    <i class='bx bx-chevron-down faq-toggle'></i>
+                </button>
+                <div class="faq-answer">
+                    <ul style="list-style: disc; padding-left: 20px;">
+                        <li>Provided direct assistance to community members in need</li>
+                        <li>Participated in local welfare programs and support activities</li>
+                        <li>Collaborated with fellow volunteers to organize community events</li>
+                        <li>Developed empathy and leadership skills through hands-on service</li>
+                        <li>Contributed to improving the quality of life in the Dau community</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Paula Nicole Dimalanta – BSOA Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function() {
+                const faqItem = this.closest('.faq-item');
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

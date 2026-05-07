@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .networking-hero {
+            background: linear-gradient(135deg, #101016 0%, #1e1e26 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .networking-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .networking-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: var(--text-light);
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-down i {
+            font-size: 2rem;
+            color: var(--accent-hover);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-5px) translateX(-50%);
+            }
+        }
+
+        .networking-path {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+
+        .path-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.45), rgba(255,255,255,0.12));
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .networking-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            position: relative;
+            width: 100%;
+            gap: 40px;
+        }
+
+        .networking-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .networking-image {
+            width: 45%;
+            max-width: 480px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .networking-image:hover {
+            transform: scale(1.05);
+        }
+
+        .networking-content {
+            width: 50%;
+            max-width: 520px;
+            text-align: left;
+            padding: 0 20px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.24);
+        }
+
+        .networking-content h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--accent);
+            word-break: break-word;
+        }
+
+        .networking-content p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        @media (max-width: 1024px) {
+            .networking-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .networking-image,
+            .networking-content {
+                width: 100%;
+                max-width: 700px;
+            }
+
+            .networking-content {
+                text-align: center;
+            }
+        }
+
+        .path-dot {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .networking-item {
+                flex-direction: column !important;
+                text-align: center;
+            }
+
+            .networking-content {
+                padding: 20px 0;
+            }
+
+            .networking-image {
+                width: 250px;
+                height: 150px;
+            }
+
+            .path-line {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Paula Nicole <span>Dimalanta</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="workexperiences.html">Work Experience</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="volunteer.html">Volunteer Work</a>
+            <a href="mentors.html">Mentors</a>
+            <a href="networking.html" class="active">Networking</a>
+            <a href="achievements.html">Achievements</a>
+        </nav>
+    </header>
+
+    <section class="networking-hero">
+        <h1>Networking</h1>
+        <p>Friends, officers, church community connections</p>
+        <div class="scroll-down">
+            <i class='bx bx-chevron-down'></i>
+        </div>
+    </section>
+
+    <section class="networking-path">
+        <div class="path-line"></div>
+
+        <div class="networking-item">
+            <div class="path-dot"></div>
+            <img src="images/networking1.jfif" alt="Friends and Personal Connections" class="networking-image">
+            <div class="networking-content">
+                <h3>Friends and Personal Connections</h3>
+                <p>Building strong friendships and personal relationships that provide support, encouragement, and shared experiences throughout my journey.</p>
+            </div>
+        </div>
+
+        <div class="networking-item">
+            <div class="path-dot"></div>
+            <img src="images/networking2.jpg" alt="Officers and Leadership Roles" class="networking-image">
+            <div class="networking-content">
+                <h3>Officers and Leadership Roles</h3>
+                <p>Serving in officer positions and leadership roles that develop organizational skills and the ability to work effectively with teams.</p>
+            </div>
+        </div>
+
+        <div class="networking-item">
+            <div class="path-dot"></div>
+            <img src="images/networking3.jfif" alt="Church Community Connections" class="networking-image">
+            <div class="networking-content">
+                <h3>Church Community Connections</h3>
+                <p>Active participation in church community activities that strengthen faith, provide spiritual guidance, and foster meaningful relationships.</p>
+            </div>
+        </div>
+
+        <div class="networking-item">
+            <div class="path-dot"></div>
+            <img src="images/networking4.jfif" alt="Table Tennis Team" class="networking-image">
+            <div class="networking-content">
+                <h3>Table Tennis Team</h3>
+                <p>Participation in table tennis teams that promote physical fitness, strategic thinking, and collaborative spirit.</p>
+            </div>
+        </div>
+
+        <div class="networking-item">
+            <div class="path-dot"></div>
+            <img src="images/netwoking6.jpg" alt="Dance Group" class="networking-image">
+            <div class="networking-content">
+                <h3>Dance Group</h3>
+                <p>Active participation in dance groups that promote creativity, self-expression, and teamwork.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paula Nicole Dimalanta – BSOA Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Smooth scroll to networking path when scroll-down is clicked
+        document.querySelector('.scroll-down').addEventListener('click', function() {
+            document.querySelector('.networking-path').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
